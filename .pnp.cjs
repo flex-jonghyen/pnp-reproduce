@@ -31,9 +31,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["@grapgrap/design-system", ["workspace:packages/design-system"]],\
+      ["@grapgrap/design-system", ["virtual:739794fd26c8152b024017e5b828c85f470eb6a49fb4c579fcefaa1f9be7d0885b07a436b1ea8568a840cdc8c18b7f129df4dfc3dd37554f707353469739a866#workspace:packages/design-system", "workspace:packages/design-system"]],\
       ["@grapgrap/domain-component", ["workspace:packages/domain-component"]],\
-      ["@grapgrap/stitches", ["workspace:packages/stitches"]],\
+      ["@grapgrap/stitches", ["virtual:1179a43fc8486e7963d219c3bf146b99d7a36cc0fb18a98b885bfba360249a77d6340557f600c2e421ec69d4224ac5609b8fad147d6cb5d96d8bb8cd0d75cc1b#workspace:packages/stitches", "virtual:a80c09e353b38bca61cf0219b0bc174cf2ff647d2804d14040937a813be42804d73a5b48dd3618c7ccd6f22e7d6470e99b7971af6c528b8a5233d44856dbaf23#workspace:packages/stitches", "workspace:packages/stitches"]],\
       ["pnp-reproduce", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -49,11 +49,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@grapgrap/design-system", [\
+        ["virtual:739794fd26c8152b024017e5b828c85f470eb6a49fb4c579fcefaa1f9be7d0885b07a436b1ea8568a840cdc8c18b7f129df4dfc3dd37554f707353469739a866#workspace:packages/design-system", {\
+          "packageLocation": "./.yarn/__virtual__/@grapgrap-design-system-virtual-a80c09e353/1/packages/design-system/",\
+          "packageDependencies": [\
+            ["@grapgrap/design-system", "virtual:739794fd26c8152b024017e5b828c85f470eb6a49fb4c579fcefaa1f9be7d0885b07a436b1ea8568a840cdc8c18b7f129df4dfc3dd37554f707353469739a866#workspace:packages/design-system"],\
+            ["@grapgrap/stitches", "virtual:a80c09e353b38bca61cf0219b0bc174cf2ff647d2804d14040937a813be42804d73a5b48dd3618c7ccd6f22e7d6470e99b7971af6c528b8a5233d44856dbaf23#workspace:packages/stitches"],\
+            ["@types/react", "npm:18.0.28"],\
+            ["react", null],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "SOFT"\
+        }],\
         ["workspace:packages/design-system", {\
           "packageLocation": "./packages/design-system/",\
           "packageDependencies": [\
             ["@grapgrap/design-system", "workspace:packages/design-system"],\
-            ["@grapgrap/stitches", "workspace:packages/stitches"]\
+            ["@grapgrap/stitches", "virtual:1179a43fc8486e7963d219c3bf146b99d7a36cc0fb18a98b885bfba360249a77d6340557f600c2e421ec69d4224ac5609b8fad147d6cb5d96d8bb8cd0d75cc1b#workspace:packages/stitches"],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -63,17 +79,49 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/domain-component/",\
           "packageDependencies": [\
             ["@grapgrap/domain-component", "workspace:packages/domain-component"],\
-            ["@grapgrap/design-system", "workspace:packages/design-system"]\
+            ["@grapgrap/design-system", "virtual:739794fd26c8152b024017e5b828c85f470eb6a49fb4c579fcefaa1f9be7d0885b07a436b1ea8568a840cdc8c18b7f129df4dfc3dd37554f707353469739a866#workspace:packages/design-system"],\
+            ["@types/react", "npm:18.0.28"],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\
           "linkType": "SOFT"\
         }]\
       ]],\
       ["@grapgrap/stitches", [\
+        ["virtual:1179a43fc8486e7963d219c3bf146b99d7a36cc0fb18a98b885bfba360249a77d6340557f600c2e421ec69d4224ac5609b8fad147d6cb5d96d8bb8cd0d75cc1b#workspace:packages/stitches", {\
+          "packageLocation": "./.yarn/__virtual__/@grapgrap-stitches-virtual-40e6b5779a/1/packages/stitches/",\
+          "packageDependencies": [\
+            ["@grapgrap/stitches", "virtual:1179a43fc8486e7963d219c3bf146b99d7a36cc0fb18a98b885bfba360249a77d6340557f600c2e421ec69d4224ac5609b8fad147d6cb5d96d8bb8cd0d75cc1b#workspace:packages/stitches"],\
+            ["@stitches/react", "virtual:40e6b5779aec878d2ec2560694b1791b73508634977137211f6a36592d82701812a40aec6e62c43a2c0b24d25f04e72fd83d9a0c750de87c02559cffd8bc3c91#npm:1.3.1-1"],\
+            ["@types/react", null],\
+            ["react", null],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:a80c09e353b38bca61cf0219b0bc174cf2ff647d2804d14040937a813be42804d73a5b48dd3618c7ccd6f22e7d6470e99b7971af6c528b8a5233d44856dbaf23#workspace:packages/stitches", {\
+          "packageLocation": "./.yarn/__virtual__/@grapgrap-stitches-virtual-18f2c8dfed/1/packages/stitches/",\
+          "packageDependencies": [\
+            ["@grapgrap/stitches", "virtual:a80c09e353b38bca61cf0219b0bc174cf2ff647d2804d14040937a813be42804d73a5b48dd3618c7ccd6f22e7d6470e99b7971af6c528b8a5233d44856dbaf23#workspace:packages/stitches"],\
+            ["@stitches/react", "virtual:18f2c8dfed4d0d987575ea3add3339a704042c2cced6cb3e3545ea6e9da6e073047d3600112235a487a030af3a1a89b74e5c6564c662810dc0d529119b755075#npm:1.3.1-1"],\
+            ["@types/react", "npm:18.0.28"],\
+            ["react", null],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "SOFT"\
+        }],\
         ["workspace:packages/stitches", {\
           "packageLocation": "./packages/stitches/",\
           "packageDependencies": [\
             ["@grapgrap/stitches", "workspace:packages/stitches"],\
-            ["@stitches/react", "virtual:bc21d7439112e7a8968c9d78539f00d6555fa395be3706b4b60d750a550b02b548f4580d08a71a582720a81ef57e55ec3aab791252723d270ea790f4d68233bb#npm:1.3.1-1"],\
+            ["@stitches/react", "virtual:40e6b5779aec878d2ec2560694b1791b73508634977137211f6a36592d82701812a40aec6e62c43a2c0b24d25f04e72fd83d9a0c750de87c02559cffd8bc3c91#npm:1.3.1-1"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\
           "linkType": "SOFT"\
@@ -87,16 +135,68 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:bc21d7439112e7a8968c9d78539f00d6555fa395be3706b4b60d750a550b02b548f4580d08a71a582720a81ef57e55ec3aab791252723d270ea790f4d68233bb#npm:1.3.1-1", {\
-          "packageLocation": "./.yarn/__virtual__/@stitches-react-virtual-36ce7e56d5/0/cache/@stitches-react-npm-1.3.1-1-531ba0a0c0-80d9d8a630.zip/node_modules/@stitches/react/",\
+        ["virtual:18f2c8dfed4d0d987575ea3add3339a704042c2cced6cb3e3545ea6e9da6e073047d3600112235a487a030af3a1a89b74e5c6564c662810dc0d529119b755075#npm:1.3.1-1", {\
+          "packageLocation": "./.yarn/__virtual__/@stitches-react-virtual-36e21fa804/0/cache/@stitches-react-npm-1.3.1-1-531ba0a0c0-80d9d8a630.zip/node_modules/@stitches/react/",\
           "packageDependencies": [\
-            ["@stitches/react", "virtual:bc21d7439112e7a8968c9d78539f00d6555fa395be3706b4b60d750a550b02b548f4580d08a71a582720a81ef57e55ec3aab791252723d270ea790f4d68233bb#npm:1.3.1-1"],\
+            ["@stitches/react", "virtual:18f2c8dfed4d0d987575ea3add3339a704042c2cced6cb3e3545ea6e9da6e073047d3600112235a487a030af3a1a89b74e5c6564c662810dc0d529119b755075#npm:1.3.1-1"],\
+            ["@types/react", "npm:18.0.28"],\
+            ["react", null]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:40e6b5779aec878d2ec2560694b1791b73508634977137211f6a36592d82701812a40aec6e62c43a2c0b24d25f04e72fd83d9a0c750de87c02559cffd8bc3c91#npm:1.3.1-1", {\
+          "packageLocation": "./.yarn/__virtual__/@stitches-react-virtual-e94fc1c596/0/cache/@stitches-react-npm-1.3.1-1-531ba0a0c0-80d9d8a630.zip/node_modules/@stitches/react/",\
+          "packageDependencies": [\
+            ["@stitches/react", "virtual:40e6b5779aec878d2ec2560694b1791b73508634977137211f6a36592d82701812a40aec6e62c43a2c0b24d25f04e72fd83d9a0c750de87c02559cffd8bc3c91#npm:1.3.1-1"],\
             ["@types/react", null],\
             ["react", null]\
           ],\
           "packagePeers": [\
             "@types/react",\
             "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/prop-types", [\
+        ["npm:15.7.5", {\
+          "packageLocation": "./.yarn/cache/@types-prop-types-npm-15.7.5-2aa48aa177-5b43b8b154.zip/node_modules/@types/prop-types/",\
+          "packageDependencies": [\
+            ["@types/prop-types", "npm:15.7.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/react", [\
+        ["npm:18.0.28", {\
+          "packageLocation": "./.yarn/cache/@types-react-npm-18.0.28-c6157151cc-e752df9611.zip/node_modules/@types/react/",\
+          "packageDependencies": [\
+            ["@types/react", "npm:18.0.28"],\
+            ["@types/prop-types", "npm:15.7.5"],\
+            ["@types/scheduler", "npm:0.16.2"],\
+            ["csstype", "npm:3.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/scheduler", [\
+        ["npm:0.16.2", {\
+          "packageLocation": "./.yarn/cache/@types-scheduler-npm-0.16.2-ba3a7d8c68-b6b4dcfeae.zip/node_modules/@types/scheduler/",\
+          "packageDependencies": [\
+            ["@types/scheduler", "npm:0.16.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["csstype", [\
+        ["npm:3.1.1", {\
+          "packageLocation": "./.yarn/cache/csstype-npm-3.1.1-3857baf48b-1f7b4f5fdd.zip/node_modules/csstype/",\
+          "packageDependencies": [\
+            ["csstype", "npm:3.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\

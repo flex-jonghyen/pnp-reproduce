@@ -10,6 +10,7 @@
     "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
+    "jsx": "react-jsx",
 
     "outDir": "dist",
     "allowJs": false,

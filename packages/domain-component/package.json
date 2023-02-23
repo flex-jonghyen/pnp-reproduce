@@ -1,6 +1,19 @@
 {
   "name": "@grapgrap/domain-component",
+  "type": "module",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json"
+  },
   "dependencies": {
     "@grapgrap/design-system": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "react": "^18"
   }
 }
