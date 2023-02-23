@@ -14,11 +14,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "pnp-reproduce",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "@grapgrap/design-system",\
+        "reference": "workspace:packages/design-system"\
+      },\
+      {\
+        "name": "@grapgrap/domain-component",\
+        "reference": "workspace:packages/domain-component"\
+      },\
+      {\
+        "name": "@grapgrap/stitches",\
+        "reference": "workspace:packages/stitches"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
+      ["@grapgrap/design-system", ["workspace:packages/design-system"]],\
+      ["@grapgrap/domain-component", ["workspace:packages/domain-component"]],\
+      ["@grapgrap/stitches", ["workspace:packages/stitches"]],\
       ["pnp-reproduce", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -28,17 +43,81 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@grapgrap/design-system", [\
+        ["workspace:packages/design-system", {\
+          "packageLocation": "./packages/design-system/",\
+          "packageDependencies": [\
+            ["@grapgrap/design-system", "workspace:packages/design-system"],\
+            ["@grapgrap/stitches", "workspace:packages/stitches"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@grapgrap/domain-component", [\
+        ["workspace:packages/domain-component", {\
+          "packageLocation": "./packages/domain-component/",\
+          "packageDependencies": [\
+            ["@grapgrap/domain-component", "workspace:packages/domain-component"],\
+            ["@grapgrap/design-system", "workspace:packages/design-system"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@grapgrap/stitches", [\
+        ["workspace:packages/stitches", {\
+          "packageLocation": "./packages/stitches/",\
+          "packageDependencies": [\
+            ["@grapgrap/stitches", "workspace:packages/stitches"],\
+            ["@stitches/react", "virtual:bc21d7439112e7a8968c9d78539f00d6555fa395be3706b4b60d750a550b02b548f4580d08a71a582720a81ef57e55ec3aab791252723d270ea790f4d68233bb#npm:1.3.1-1"],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@stitches/react", [\
+        ["npm:1.3.1-1", {\
+          "packageLocation": "./.yarn/cache/@stitches-react-npm-1.3.1-1-531ba0a0c0-80d9d8a630.zip/node_modules/@stitches/react/",\
+          "packageDependencies": [\
+            ["@stitches/react", "npm:1.3.1-1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:bc21d7439112e7a8968c9d78539f00d6555fa395be3706b4b60d750a550b02b548f4580d08a71a582720a81ef57e55ec3aab791252723d270ea790f4d68233bb#npm:1.3.1-1", {\
+          "packageLocation": "./.yarn/__virtual__/@stitches-react-virtual-36ce7e56d5/0/cache/@stitches-react-npm-1.3.1-1-531ba0a0c0-80d9d8a630.zip/node_modules/@stitches/react/",\
+          "packageDependencies": [\
+            ["@stitches/react", "virtual:bc21d7439112e7a8968c9d78539f00d6555fa395be3706b4b60d750a550b02b548f4580d08a71a582720a81ef57e55ec3aab791252723d270ea790f4d68233bb#npm:1.3.1-1"],\
+            ["@types/react", null],\
+            ["react", null]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["pnp-reproduce", [\
         ["workspace:.", {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["pnp-reproduce", "workspace:."]\
+            ["pnp-reproduce", "workspace:."],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["typescript", [\
+        ["patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-72dc6f164f-ab417a2f39.zip/node_modules/typescript/",\
+          "packageDependencies": [\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]]\
     ]\

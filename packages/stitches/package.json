@@ -1,0 +1,9 @@
+{
+  "name": "@grapgrap/stitches",
+  "dependencies": {
+    "@stitches/react": "^1.3.1-1"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}

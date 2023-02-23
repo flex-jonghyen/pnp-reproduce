@@ -1,0 +1,6 @@
+{
+  "name": "@grapgrap/design-system",
+  "dependencies": {
+    "@grapgrap/stitches": "workspace:*"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "module": "esnext",
+    "target": "esnext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "allowJs": false,
+    "checkJs": false
+  }
+}

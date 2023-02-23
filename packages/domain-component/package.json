@@ -1,0 +1,6 @@
+{
+  "name": "@grapgrap/domain-component",
+  "dependencies": {
+    "@grapgrap/design-system": "workspace:*"
+  }
+}
