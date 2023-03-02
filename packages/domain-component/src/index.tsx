@@ -1,6 +1,11 @@
+import { SomeButton } from "@grapgrap/another-component";
 import { Button } from "@grapgrap/design-system";
 
 export const SomeComponent = () => {
-  // NOTE: Button should not be any
-  return <Button>some text</Button>;
+  return (
+    <div>
+      <Button>some text</Button>
+      <SomeButton />
+    </div>
+  );
 };

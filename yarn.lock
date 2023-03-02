@@ -5,11 +5,24 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@grapgrap/another-component@workspace:*, @grapgrap/another-component@workspace:packages/another-case":
+  version: 0.0.0-use.local
+  resolution: "@grapgrap/another-component@workspace:packages/another-case"
+  dependencies:
+    "@grapgrap/design-system": "workspace:*"
+    "@types/react": ^18
+    typescript: ^4.9.5
+  peerDependencies:
+    react: ^18
+  languageName: unknown
+  linkType: soft
+
 "@grapgrap/design-system@workspace:*, @grapgrap/design-system@workspace:packages/design-system":
   version: 0.0.0-use.local
   resolution: "@grapgrap/design-system@workspace:packages/design-system"
   dependencies:
     "@grapgrap/stitches": "workspace:*"
+    "@types/react": ^18
     typescript: ^4.9.5
   peerDependencies:
     react: ^18
@@ -20,6 +33,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@grapgrap/domain-component@workspace:packages/domain-component"
   dependencies:
+    "@grapgrap/another-component": "workspace:*"
     "@grapgrap/design-system": "workspace:*"
     "@types/react": ^18
     typescript: ^4.9.5

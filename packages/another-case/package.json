@@ -1,5 +1,5 @@
 {
-  "name": "@grapgrap/domain-component",
+  "name": "@grapgrap/another-component",
   "type": "module",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -7,7 +7,6 @@
     "build": "tsc -p ./tsconfig.json"
   },
   "dependencies": {
-    "@grapgrap/another-component": "workspace:*",
     "@grapgrap/design-system": "workspace:*"
   },
   "devDependencies": {
